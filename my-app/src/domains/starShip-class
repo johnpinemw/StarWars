@@ -1,0 +1,63 @@
+
+export interface starShipType {
+    name: "string";
+	model: "string";
+	manufacturer: "string";
+	cost_in_credits: "number";
+	length: "number";
+	max_atmosphering_speed: "number";
+	crew: "string";
+	passengers: "number";
+	cargo_capacity: "number";
+	consumables: "string";
+	hyperdrive_rating: "string";
+	MGLT: "number";
+	starship_class: "string";
+	pilots: [];
+	films: [];
+	created: "string";
+	edited: "string";
+	url: "string";
+}
+export default class StarShip{
+    name: "string";
+	model: "string";
+	manufacturer: "string";
+	cost_in_credits: "number";
+	length: "number";
+	max_atmosphering_speed: "number";
+	crew: "string";
+	passengers: "number";
+	cargo_capacity: "number";
+	consumables: "string";
+	hyperdrive_rating: "string";
+	MGLT: "number";
+	starship_class: "string";
+	pilots: [];
+	films: [];
+	created: "string";
+	edited: "string";
+	url: "string";
+
+    constructor(starter : starShipType){
+    this.name = starter.name;
+	this.model = starter.model;
+	this.manufacturer = starter.manufacturer;
+	this.cost_in_credits = starter.cost_in_credits;
+	this.length = starter.length;
+	this.max_atmosphering_speed = starter.max_atmosphering_speed;
+	this.crew = starter.crew;
+	this.passengers = starter.passengers;
+	this.cargo_capacity = starter.cargo_capacity;
+	this.consumables = starter.consumables;
+	this.hyperdrive_rating = starter.hyperdrive_rating;
+	this.MGLT = starter.MGLT;
+	this.starship_class = starter.starship_class;
+	this.pilots = starter.pilots;
+	this.films = starter.films;
+	this.created = starter.created;
+	this.edited = starter.edited;
+	this.url = starter.url;
+    }
+}
+
