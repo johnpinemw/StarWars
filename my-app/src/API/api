@@ -1,0 +1,21 @@
+
+export const BASE_API_URL: string = 'https://swapi.dev/api/starships';
+
+export const getAllStarShips = async (path: any) => {
+
+    if(path === null){
+       try {
+       return  await fetch(BASE_API_URL);
+       } catch (error) {
+           
+       } 
+    }else{
+        try {
+            return await fetch(BASE_API_URL+path); 
+            } catch (error) {
+                
+            }  
+    }
+    
+    
+}
